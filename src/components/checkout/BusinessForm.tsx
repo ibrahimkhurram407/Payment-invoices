@@ -107,9 +107,9 @@ export function BusinessForm({ paymentId, userId, onBusinessDataSaved }: Busines
       });
 
       // Refresh after 3 seconds
-      // setTimeout(() => {
-      //   window.location.reload();  // Refresh the page
-      // }, 3000);
+      setTimeout(() => {
+        window.location.reload();  // Refresh the page
+      }, 3000);
     } catch (error) {
       console.error("Failed to save business data:", error);
       setApiResponse("Failed to save business details. Please try again.");
